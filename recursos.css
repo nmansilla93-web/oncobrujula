@@ -1,0 +1,15 @@
+.recurso-grupo{margin-bottom:40px}
+.recurso-grupo__title{font-family:var(--font-sans);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-mid);margin:0 0 14px}
+.recurso-grid{display:grid;gap:14px}
+.recurso-card{background:var(--white);border:1px solid rgba(27,74,92,.12);border-radius:var(--radius-lg);padding:20px 22px;border-left:4px solid var(--teal-mid)}
+.recurso-card__top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:6px}
+.recurso-card__name{font-family:var(--font-serif);font-size:1.15rem;color:var(--teal-dark);margin:0}
+.recurso-card__ig{font-size:.88rem;color:var(--teal-mid);font-weight:500}
+.recurso-card__ig:hover{text-decoration:underline;text-underline-offset:3px}
+.recurso-card__tag{font-size:.9rem;color:var(--text-soft);margin:0 0 10px}
+.recurso-card__meta{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:.95rem;color:var(--text)}
+.recurso-card__meta a{color:var(--teal-dark);font-weight:600}
+.recurso-card__meta a:hover{text-decoration:underline;text-underline-offset:3px}
+.recurso-card--wide{grid-column:1/-1}
+.recurso-note{background:var(--ice);border-radius:var(--radius);padding:12px 14px;margin-top:12px;font-size:.9rem;color:var(--text)}
+@media(min-width:720px){.recurso-grid{grid-template-columns:1fr 1fr}}
