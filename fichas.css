@@ -1,0 +1,15 @@
+.ficha-grupo{margin-bottom:32px}
+.ficha-grupo__title{font-family:var(--font-sans);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-mid);margin:0 0 14px}
+.ficha-grid{display:grid;gap:14px}
+.ficha-card-lib{display:flex;align-items:center;gap:14px;background:var(--white);border:1px solid rgba(27,74,92,.12);border-left:4px solid var(--teal-mid);border-radius:var(--radius-lg);padding:18px 20px;transition:transform .15s ease,box-shadow .15s ease}
+.ficha-card-lib:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+.ficha-card-lib__num{font-family:var(--font-serif);font-size:1.1rem;color:var(--teal-mid);flex:none;width:28px}
+.ficha-card-lib__name{flex:1;font-weight:600;color:var(--teal-dark)}
+.ficha-card-lib__dl{flex:none;font-size:.85rem;font-weight:600;color:var(--teal-mid)}
+.ficha-card-lib__dl::after{content:" ↓"}
+.ficha-note{max-width:70ch;color:var(--text-soft);font-size:.95rem;margin-top:8px}
+.ficha-note+.ficha-note{margin-top:10px}
+.ficha-note--muted{font-size:.88rem}
+.ficha-note a{color:var(--teal-dark);font-weight:600}
+.ficha-note a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(min-width:720px){.ficha-grid{grid-template-columns:1fr 1fr}}
