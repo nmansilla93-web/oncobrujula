@@ -3,10 +3,15 @@
    ========================================================================== */
 
 :root {
-  --teal-dark: #1B4A5C;
-  --teal-mid: #2E6A7A;
-  --ice: #E8F0F2;
-  --cream: #F7F5F2;
+  /* Paleta Oncobrújula: crema + azul petróleo + verde salvia + terracota */
+  --teal-dark: #3D5470;      /* azul petróleo (títulos, secciones oscuras) */
+  --teal-mid: #52698A;       /* azul petróleo medio */
+  --ice: #E4EBE6;            /* salvia muy suave (fondos de tarjetas y avisos) */
+  --cream: #F7F4EF;          /* crema */
+  --sage: #688172;           /* verde salvia (detalles, bordes, íconos) */
+  --sage-dark: #4E6656;      /* salvia oscuro (texto chico sobre fondos claros) */
+  --terracota: #9E5B3E;      /* llamados a la acción */
+  --terracota-dark: #844A31;
   --text: #2C3338;
   --text-soft: #5B666C;
   --white: #FFFFFF;
@@ -18,7 +23,7 @@
   --radius-lg: 14px;
   --container: 1080px;
 
-  --shadow: 0 8px 24px rgba(27, 74, 92, 0.10);
+  --shadow: 0 8px 24px rgba(61, 84, 112, 0.10);
 }
 
 /* ---- Reset ---- */
@@ -100,17 +105,17 @@ button:focus-visible {
 .btn:hover { transform: translateY(-1px); }
 
 .btn--primary {
-  background: var(--white);
-  color: var(--teal-dark);
+  background: var(--terracota);
+  color: var(--white);
 }
-.btn--primary:hover { background: var(--ice); }
+.btn--primary:hover { background: var(--terracota-dark); }
 
 .btn--ghost {
   background: transparent;
-  color: var(--white);
-  border-color: rgba(255,255,255,0.55);
+  color: var(--teal-dark);
+  border-color: var(--sage);
 }
-.btn--ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+.btn--ghost:hover { border-color: var(--sage-dark); background: var(--ice); }
 
 .btn--outline-light {
   background: transparent;
@@ -120,10 +125,10 @@ button:focus-visible {
 .btn--outline-light:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
 
 .btn--whatsapp {
-  background: var(--teal-mid);
+  background: var(--terracota);
   color: var(--white);
 }
-.btn--whatsapp:hover { background: var(--teal-dark); }
+.btn--whatsapp:hover { background: var(--terracota-dark); }
 
 .btn--large {
   padding: 18px 34px;
@@ -139,7 +144,7 @@ button:focus-visible {
   z-index: 100;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: saturate(180%) blur(8px);
-  border-bottom: 1px solid rgba(27, 74, 92, 0.10);
+  border-bottom: 1px solid rgba(61, 84, 112, 0.10);
 }
 
 .nav {
@@ -194,7 +199,7 @@ button:focus-visible {
   left: 0;
   right: 0;
   background: var(--white);
-  border-bottom: 1px solid rgba(27, 74, 92, 0.10);
+  border-bottom: 1px solid rgba(61, 84, 112, 0.10);
   display: none;
   flex-direction: column;
   gap: 18px;
@@ -219,8 +224,8 @@ button:focus-visible {
 /* ---- Hero ---- */
 .hero {
   position: relative;
-  background: linear-gradient(160deg, var(--teal-dark) 0%, var(--teal-mid) 100%);
-  color: var(--white);
+  background: linear-gradient(170deg, var(--cream) 0%, #EFEBE3 100%);
+  color: var(--text);
   overflow: hidden;
   padding: 64px 0 72px;
 }
@@ -243,19 +248,19 @@ button:focus-visible {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ice);
+  color: var(--sage-dark);
   margin-bottom: 18px;
 }
 
 .hero__title {
   font-size: clamp(2rem, 5.5vw, 3.1rem);
-  color: var(--white);
+  color: var(--teal-dark);
   margin-bottom: 22px;
 }
 
 .hero__lead {
   font-size: 1.08rem;
-  color: rgba(255,255,255,0.92);
+  color: var(--text-soft);
   max-width: 58ch;
   margin-bottom: 34px;
 }
@@ -314,12 +319,12 @@ button:focus-visible {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--teal-mid);
+  background: var(--sage);
 }
 
 .notice {
   background: var(--ice);
-  border-left: 4px solid var(--teal-mid);
+  border-left: 4px solid var(--sage);
   padding: 18px 22px;
   border-radius: var(--radius);
   color: var(--text);
@@ -335,7 +340,7 @@ button:focus-visible {
 
 .col-card {
   background: var(--white);
-  border: 1px solid rgba(27, 74, 92, 0.12);
+  border: 1px solid rgba(61, 84, 112, 0.12);
   border-radius: var(--radius-lg);
   padding: 32px;
 }
@@ -421,7 +426,7 @@ button:focus-visible {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--teal-mid);
+  color: var(--sage-dark);
 }
 .info-card__value {
   font-family: var(--font-serif);
@@ -481,7 +486,7 @@ button:focus-visible {
 }
 .accordion__item {
   background: var(--white);
-  border: 1px solid rgba(27, 74, 92, 0.12);
+  border: 1px solid rgba(61, 84, 112, 0.12);
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -556,7 +561,7 @@ button:focus-visible {
 
 /* ---- Footer ---- */
 .footer {
-  background: #123845;
+  background: #2C3D52;
   color: rgba(255,255,255,0.82);
   padding: 48px 0 40px;
   font-size: 0.92rem;
@@ -590,7 +595,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 18px rgba(27, 74, 92, 0.35);
+  box-shadow: 0 6px 18px rgba(61, 84, 112, 0.35);
   z-index: 90;
   transition: transform 0.15s ease, background 0.15s ease;
 }

@@ -1,7 +1,7 @@
 .recurso-grupo{margin-bottom:40px}
 .recurso-grupo__title{font-family:var(--font-sans);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-mid);margin:0 0 14px}
 .recurso-grid{display:grid;gap:14px}
-.recurso-card{background:var(--white);border:1px solid rgba(27,74,92,.12);border-radius:var(--radius-lg);padding:20px 22px;border-left:4px solid var(--teal-mid)}
+.recurso-card{background:var(--white);border:1px solid rgba(61,84,112,.12);border-radius:var(--radius-lg);padding:20px 22px;border-left:4px solid var(--sage)}
 .recurso-card__top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px;margin-bottom:6px}
 .recurso-card__name{font-family:var(--font-serif);font-size:1.15rem;color:var(--teal-dark);margin:0}
 .recurso-card__ig{font-size:.88rem;color:var(--teal-mid);font-weight:500}
