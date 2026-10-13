@@ -37,6 +37,10 @@
   <a id="wa" href="https://wa.me/5493584380443?text=Hola%20Natalia%2C%20te%20escribo%20desde%20Instagram.%20Quiero%20agendar%20una%20orientaci%C3%B3n%20de%20Oncobr%C3%BAjula.">Abrir WhatsApp</a>
 </main>
 <!-- Redirección solo por JavaScript: los lectores de vista previa no la siguen y muestran la tarjeta de Oncobrújula -->
-<script>location.replace(document.getElementById('wa').href);</script>
+<script>
+  // Cuenta la visita en GoatCounter (sin cookies) y redirige a WhatsApp
+  (function(){var go=function(){location.replace(document.getElementById('wa').href)};
+  try{var i=new Image();i.onload=i.onerror=go;i.src='https://oncobrujula.goatcounter.com/count?p=/whatsapp-desde-instagram&t=WhatsApp%20desde%20Instagram&rnd='+Math.random();setTimeout(go,600)}catch(e){go()}})();
+</script>
 </body>
 </html>
