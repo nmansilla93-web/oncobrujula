@@ -759,3 +759,58 @@ a { text-underline-offset: 3px; }
 
 /* Números de teléfono, horarios y datos: cifras alineadas */
 .recurso-card__meta, .contact-details, .steps__num, .info-card__value { font-variant-numeric: lining-nums tabular-nums; }
+
+/* ---- El dolor: líneas cortas, una por renglón ---- */
+.pain .section__title { max-width: 18ch; }
+.pain__lines { display: grid; gap: 10px; max-width: 46ch; }
+.pain__lines p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  line-height: 1.4;
+  color: var(--text-soft);
+}
+.pain__close {
+  margin-top: 28px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.35rem, 2.8vw, 1.7rem);
+  color: var(--terracota-dark);
+}
+
+/* ---- Qué ganás: tres resultados, sin tarjetas ---- */
+.gains { display: grid; gap: 0; margin-bottom: 36px; }
+.gains li { padding: 26px 0; border-top: 1px solid rgba(104, 129, 114, 0.35); }
+.gains li:last-child { border-bottom: 1px solid rgba(104, 129, 114, 0.35); }
+.gains h3 { font-size: clamp(1.35rem, 2.6vw, 1.6rem); color: var(--teal-dark); margin-bottom: 8px; }
+.gains p { color: var(--text-soft); max-width: 48ch; }
+@media (min-width: 860px) {
+  .gains { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .gains li, .gains li:last-child { border-bottom: none; padding: 28px 0 0; }
+}
+
+/* ---- Empezar es simple: 3 pasos ---- */
+.steps--three { max-width: none; margin-bottom: 0; gap: 28px; }
+.steps--three li { gap: 18px; }
+.steps--three h3 { font-size: 1.3rem; color: var(--teal-dark); margin-bottom: 4px; }
+.steps--three p { padding-top: 0; color: var(--text-soft); }
+@media (min-width: 860px) {
+  .steps--three { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .steps--three li { flex-direction: column; gap: 16px; }
+}
+
+/* ---- Página Recursos ---- */
+.page-intro { background: linear-gradient(170deg, var(--cream) 0%, #EFEBE3 100%); padding: 48px 0 56px; }
+.page-intro__back a { color: var(--sage-dark); font-weight: 600; font-size: 0.95rem; }
+@media (hover: hover) { .page-intro__back a:hover { color: var(--terracota); } }
+.page-intro__title { font-size: clamp(2.4rem, 6vw, 3.6rem); color: var(--teal-dark); margin: 18px 0 14px; }
+.page-intro__lead { font-size: 1.15rem; color: var(--text-soft); max-width: 52ch; }
+.page-intro__jump { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.page-intro__jump a {
+  padding: 10px 18px; border-radius: 999px; border: 1px solid var(--sage);
+  color: var(--teal-dark); font-weight: 600; font-size: 0.95rem;
+  transition: background-color 160ms ease, transform 160ms var(--ease-out);
+}
+.page-intro__jump a:active { transform: scale(0.97); }
+@media (hover: hover) { .page-intro__jump a:hover { background: var(--ice); } }
+.nav__links a[aria-current="page"] { color: var(--terracota); }
+.section--tint .about { box-shadow: var(--shadow); }
+.accordion__panel a { color: var(--terracota); font-weight: 600; text-decoration: underline; }
