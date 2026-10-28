@@ -696,6 +696,12 @@ button:focus-visible {
 .hero__byline strong { display: block; color: var(--teal-dark); font-weight: 700; }
 @media (hover: hover) { .hero__byline:hover strong { color: var(--terracota); } }
 
+.hero__note {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
 /* ---- Brújula: la aguja busca el norte una sola vez ---- */
 .hero__needle { transform-origin: 100px 100px; transform-box: view-box; animation: needle-settle 1.6s var(--ease-out) 0.25s both; }
 @keyframes needle-settle {
@@ -792,6 +798,7 @@ a { text-underline-offset: 3px; }
 .steps--three li { gap: 18px; }
 .steps--three h3 { font-size: 1.3rem; color: var(--teal-dark); margin-bottom: 4px; }
 .steps--three p { padding-top: 0; color: var(--text-soft); }
+.steps__cta { margin-top: 36px; }
 @media (min-width: 860px) {
   .steps--three { grid-template-columns: repeat(3, 1fr); gap: 40px; }
   .steps--three li { flex-direction: column; gap: 16px; }

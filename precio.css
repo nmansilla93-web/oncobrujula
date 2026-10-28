@@ -1,0 +1,38 @@
+.price {
+  background: var(--ice);
+  border: 1px solid rgba(104, 129, 114, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+.price__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  margin-bottom: 8px;
+}
+.price__amount {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--terracota-dark);
+  margin-bottom: 10px;
+}
+.price__old {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  text-decoration: line-through;
+  margin-right: 8px;
+}
+.price__valid,
+.price__includes {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+.price .btn {
+  margin-top: 14px;
+}
