@@ -940,3 +940,7 @@ section[id], [id="alerta-titulo"] { scroll-margin-top: 84px; }
 
 /* Aire entre los pasos y el precio */
 .steps--three + .price { margin-top: 44px; }
+
+/* Señales de alerta como sección propia, sin aire de más */
+.section--alert { padding: 56px 0; }
+@media (min-width: 860px) { .section--alert { padding: 72px 0; } }
