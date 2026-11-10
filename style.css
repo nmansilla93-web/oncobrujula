@@ -1049,3 +1049,5 @@ section[id], [id="alerta-titulo"] { scroll-margin-top: 84px; }
   .moment__chosen { display: block; }
   .tablero .moment__opt[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--teal-dark); }
 }
+
+.about__socia { margin-top: 22px; }
