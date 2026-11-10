@@ -82,8 +82,14 @@
           void p.offsetWidth; // reinicia la entrada
           p.classList.add('is-in');
           if (focusPanel && window.innerWidth < 860) {
-            p.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'nearest' });
+            // En el celular la respuesta queda más abajo: bajamos solos hasta ella,
+            // dejando a la vista el menú fijo y un poco de aire.
+            var header = document.querySelector('.site-header');
+            var offset = (header ? header.offsetHeight : 0) + 12;
+            var y = p.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: y, behavior: reduce ? 'auto' : 'smooth' });
           }
+          if (focusPanel) { try { p.focus({ preventScroll: true }); } catch (e) {} }
         }
       });
       track('brujula-' + key, btn.textContent.trim());
