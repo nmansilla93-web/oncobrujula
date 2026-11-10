@@ -1038,3 +1038,14 @@ section[id], [id="alerta-titulo"] { scroll-margin-top: 84px; }
   .hero--tablero .hero__lead { font-size: 1.02rem; }
   .hero--tablero .hero__head { margin-bottom: 20px; }
 }
+
+/* Tablero: momento elegido, confianza junto al botón */
+.moment__chosen { display: none; font-size: 0.95rem; color: var(--text-soft); margin-bottom: 8px; }
+.moment__chosen strong { color: var(--teal-dark); }
+.moment__panel:focus { outline: none; }
+.offer__trust { display: flex; align-items: flex-start; gap: 8px; margin-top: 14px; font-size: 1rem; font-weight: 700; color: var(--teal-dark); }
+.offer__trust svg { flex: none; margin-top: 2px; }
+@media (max-width: 859px) {
+  .moment__chosen { display: block; }
+  .tablero .moment__opt[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--white), 0 0 0 5px var(--teal-dark); }
+}
