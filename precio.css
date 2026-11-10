@@ -1,6 +1,6 @@
 .price {
   background: var(--ice);
-  border: 1px solid rgba(104, 129, 114, 0.28);
+  border: 1px solid rgba(107, 133, 128, 0.28);
   border-radius: var(--radius-lg);
   padding: 26px 28px;
   max-width: 520px;
