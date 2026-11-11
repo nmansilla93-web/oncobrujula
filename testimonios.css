@@ -13,22 +13,23 @@
   flex: 0 0 82%;
   background: var(--white);
   border: 1px solid rgba(36, 88, 90, 0.12);
+  border-left: 4px solid var(--teal-mid);
   border-radius: var(--radius-lg);
-  padding: 26px 24px;
+  padding: 28px 26px;
   box-shadow: var(--shadow);
 }
 .quote blockquote {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   font-family: var(--font-serif);
-  font-size: 1.1rem;
-  color: var(--text);
-  line-height: 1.45;
+  font-size: 1.22rem;
+  line-height: 1.4;
+  color: var(--teal-dark);
 }
 .quote blockquote::before { content: "“"; }
 .quote blockquote::after { content: "”"; }
 .quote__author {
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.92rem;
+  font-weight: 700;
   color: var(--sage-dark);
   margin: 0;
 }
