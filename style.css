@@ -1070,3 +1070,13 @@ h2.alert__title { font-family: var(--font-sans); font-size: 1.2rem; font-weight:
 .timeline__year { display: block; font-weight: 700; color: var(--teal-dark); font-variant-numeric: lining-nums; }
 .formacion li { display: grid; gap: 2px; }
 .formacion li strong { color: var(--teal-dark); }
+
+/* Ajustes tomados de la propuesta alternativa */
+.hero__eyebrow { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal-dark); margin-bottom: 12px; }
+.section--warm { background: var(--norte-suave); }
+.about__lema { margin-top: 14px; }
+.about__lema strong { color: var(--teal-dark); }
+.timeline { border-left: 0; background: radial-gradient(circle, var(--arena) 1.6px, transparent 2px) 3px 0 / 6px 9px repeat-y; padding-left: 4px; }
+.formacion li { display: list-item; }
+.formacion li span { color: var(--text-soft); }
+.about__socia-line { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--text-soft); font-size: 0.95rem; }
