@@ -1080,3 +1080,5 @@ h2.alert__title { font-family: var(--font-sans); font-size: 1.2rem; font-weight:
 .formacion li { display: list-item; }
 .formacion li span { color: var(--text-soft); }
 .about__socia-line { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--text-soft); font-size: 0.95rem; }
+
+.price__pay { margin-top: 10px; font-size: 0.95rem; color: var(--text-soft); }
