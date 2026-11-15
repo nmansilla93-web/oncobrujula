@@ -37,14 +37,12 @@
 <body>
 <main>
   <img src="../img/oncobrujula-isotipo.svg" alt="" width="72" height="72">
-  <p>Te estoy llevando a WhatsApp…</p>
-  <a id="wa" href="https://wa.me/5493584380443?text=Hola%20Natalia%2C%20te%20escribo%20desde%20Instagram.%20Quiero%20agendar%20una%20orientaci%C3%B3n%20de%20Oncobr%C3%BAjula.">Abrir WhatsApp</a>
+  <p>Tocá el botón para escribirme por WhatsApp.</p>
+  <a id="wa" data-goatcounter-click="whatsapp-desde-instagram" href="https://wa.me/5493584380443?text=Hola%20Natalia%2C%20te%20escribo%20desde%20Instagram.%20Quiero%20agendar%20una%20orientaci%C3%B3n%20de%20Oncobr%C3%BAjula.">Abrir WhatsApp</a>
 </main>
-<!-- Redirección solo por JavaScript: los lectores de vista previa no la siguen y muestran la tarjeta de Oncobrújula -->
-<script>
-  // Cuenta la visita en GoatCounter (sin cookies) y redirige a WhatsApp
-  (function(){var go=function(){location.replace(document.getElementById('wa').href)};
-  try{var i=new Image();i.onload=i.onerror=go;i.src='https://oncobrujula.goatcounter.com/count?p=/whatsapp-desde-instagram&t=WhatsApp%20desde%20Instagram&rnd='+Math.random();setTimeout(go,600)}catch(e){go()}})();
-</script>
+<!-- Sin redirección automática: que el toque sea del usuario, no de un script, evita que el
+     navegador interno de Instagram rompa el texto precargado (llega con %20, %2C, etc. sin decodificar). -->
+<!-- Métricas: GoatCounter (sin cookies). Panel: https://oncobrujula.goatcounter.com -->
+<script data-goatcounter="https://oncobrujula.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
